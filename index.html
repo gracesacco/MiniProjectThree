@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+
+    <script src="https://d3js.org/d3.v6.js" defer></script>
+    <script src="https://unpkg.com/topojson@3" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+    <script src="mapchart.js" defer type="module"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="main.js" defer></script> -->
+
+    <!-- import the webpage's javascript file -->
+
+  </head>
+  <body>
+      <h1>Mortality Rates by Country</h1>
+      <div class = "btn"><a class = "button" href="about.html">About</a></div>
+      <h2><b>By:</b> Junhyung So, Grace Sacco, Larissa Portillo, Shahzad Manji</h2>
+      <h2><strong>Click the Countries Below to Learn More!</strong></h2>
+      <div class="row">
+        <div class="col2">
+
+        </div>
+        <div class="yearselector">
+          Select Year
+          <select id="year-category" class="form-control">
+            <option value="1970">1970</option>
+            <option value="1980">1980</option>
+            <option value="1990">1990</option>
+            <option value="2000">2000</option>
+            <option value="2010">2010</option>
+          </select>
+        </div>
+      </div>
+
+      <div class = "mapchart">
+      </div>
+
+      <div class = "countryName" id="country">
+
+      </div>
+      <div class="row">
+        <div class="col1" id ="chart-area" >
+
+        </div>
+        <div class="col1" id="gender-chart">
+
+        </div>
+
+        <div class="col1" id="age-chart">
+        </div>
+
+      <div id="tooltip" class="hidden">
+        <p><span id="value"></span></p>
+    </div>
+    <div id="tooltipAGES" class="hidden">
+      <p><span id="value"></span></p>
+    </div>
+    <div id="tooltipGender" class="hidden">
+      <p><span id="value"></span></p>
+    </div>
+    <div id="tooltipAGES" class="hidden">
+        <p><span id="age"></span></p>
+      </div>
+
+  </body>
+  </html>
